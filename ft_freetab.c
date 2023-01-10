@@ -15,10 +15,10 @@
 
 void	free_tab(char **tab)
 {
-	char **tmp;
+	char	**tmp;
 
 	tmp = tab;
-	while(*tmp)
+	while (*tmp)
 	{
 		free(*tmp);
 		tmp++;
