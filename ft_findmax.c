@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_inttab.c                                   :+:      :+:    :+:   */
+/*   ft_findmax.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atardif <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 17:54:07 by atardif           #+#    #+#             */
-/*   Updated: 2023/01/31 17:18:00 by atardif          ###   ########.fr       */
+/*   Created: 2023/01/31 17:10:43 by atardif           #+#    #+#             */
+/*   Updated: 2023/01/31 17:15:10 by atardif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void	ft_free_inttab(int **tab)
+int	ft_findmax(int x, int y)
 {
-	int	**tmp;
-
-	tmp = tab;
-	while (*tmp)
-	{
-		free(*tmp);
-		tmp++;
-	}
-	free(tab);
+	if (x > y)
+		return (x);
+	return (y);
 }

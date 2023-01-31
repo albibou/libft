@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_inttab.c                                   :+:      :+:    :+:   */
+/*   ft_findmin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atardif <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 17:54:07 by atardif           #+#    #+#             */
-/*   Updated: 2023/01/31 17:18:00 by atardif          ###   ########.fr       */
+/*   Created: 2023/01/31 17:13:15 by atardif           #+#    #+#             */
+/*   Updated: 2023/01/31 17:14:53 by atardif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void	ft_free_inttab(int **tab)
+int	ft_findmin(int x, int y)
 {
-	int	**tmp;
-
-	tmp = tab;
-	while (*tmp)
-	{
-		free(*tmp);
-		tmp++;
-	}
-	free(tab);
+	if (x < y)
+		return (x);
+	return (y);
 }

@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_inttab.c                                   :+:      :+:    :+:   */
+/*   ft_findabs.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atardif <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 17:54:07 by atardif           #+#    #+#             */
-/*   Updated: 2023/01/31 17:18:00 by atardif          ###   ########.fr       */
+/*   Created: 2023/01/31 17:11:48 by atardif           #+#    #+#             */
+/*   Updated: 2023/01/31 17:16:29 by atardif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void	ft_free_inttab(int **tab)
+int	ft_findabs(int x)
 {
-	int	**tmp;
-
-	tmp = tab;
-	while (*tmp)
-	{
-		free(*tmp);
-		tmp++;
-	}
-	free(tab);
+	if (x < 0)
+		return (-x);
+	return (x);
 }
