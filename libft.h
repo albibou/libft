@@ -6,7 +6,7 @@
 /*   By: atardif <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 18:59:15 by atardif           #+#    #+#             */
-/*   Updated: 2023/01/31 17:27:10 by atardif          ###   ########.fr       */
+/*   Updated: 2023/01/31 17:30:27 by atardif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -27,7 +27,7 @@ int		ft_findabs(int x);
 int		ft_findmax(int x, int y);
 int		ft_findmin(int x, int y);
 void	ft_freetab(char **tab);
-void	ft_free_inttab(int **tab);
+void	ft_free_inttab(int **tab, int tabsize);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
